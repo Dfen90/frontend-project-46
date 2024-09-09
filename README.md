@@ -26,3 +26,9 @@ gendiff <filepath1> <filepath2>
 
 gendiff __fixtures__/file1.yml __fixtures__/file2.yml
 *** https://asciinema.org/a/UpAoisGZBUWAHMScmjHsookEH
+
+Пример работы пакета:
+
+```bash
+npm test
+*** https://asciinema.org/a/d9uP1bofNArVFXMUvZrVJxfcV

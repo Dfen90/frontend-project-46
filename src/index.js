@@ -1,31 +1,24 @@
 import { parseFile } from './parsers.js';
 import buildDiff from './diff.js';
+import stylish from './formatters/stylish.js';
 
-const formatDiff = (diff) => {
-  const lines = diff.map((item) => {
-    switch (item.type) {
-      case 'added':
-        return `  + ${item.key}: ${JSON.stringify(item.value)}`;
-      case 'removed':
-        return `  - ${item.key}: ${JSON.stringify(item.value)}`;
-      case 'changed':
-        return `  - ${item.key}: ${JSON.stringify(item.oldValue)}\n  + ${item.key}: ${JSON.stringify(item.newValue)}`;
-      case 'unchanged':
-        return `    ${item.key}: ${JSON.stringify(item.value)}`;
-      default:
-        throw new Error(`Unknown diff type: ${item.type}`);
-    }
-  });
-
-  return `{\n${lines.join('\n')}\n}`;
-};
-
-const genDiff = (filepath1, filepath2) => {
+const genDiff = (filepath1, filepath2, formatName = 'stylish') => {
   const data1 = parseFile(filepath1);
   const data2 = parseFile(filepath2);
 
+  console.log('Data 1:', JSON.stringify(data1, null, 2));
+  console.log('Data 2:', JSON.stringify(data2, null, 2));
+
   const diff = buildDiff(data1, data2);
-  return formatDiff(diff);
+  
+  console.log('Diff:', JSON.stringify(diff, null, 2));
+
+  switch (formatName) {
+    case 'stylish':
+      return stylish(diff);
+    default:
+      throw new Error(`Unknown format: ${formatName}`);
+  }
 };
 
 export default genDiff;
