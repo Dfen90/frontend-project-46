@@ -32,3 +32,21 @@ gendiff __fixtures__/file1.yml __fixtures__/file2.yml
 ```bash
 npm test
 *** https://asciinema.org/a/d9uP1bofNArVFXMUvZrVJxfcV
+
+## Usage
+
+```bash
+gendiff [options] <filepath1> <filepath2>
+
+Options:
+  -V, --version        output the version number
+  -f, --format <type>  output format (default: "stylish")
+  -h, --help           display help for command
+
+# Example with stylish format (default)
+gendiff file1.json file2.json
+
+# Example with plain format
+gendiff --format plain file1.json file2.json
+
+***  https://asciinema.org/a/hitv11qg6K8u41YDTdSUZ5mig
