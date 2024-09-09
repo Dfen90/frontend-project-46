@@ -19,4 +19,10 @@ gendiff <filepath1> <filepath2>
 ./bin/gendiff.js __fixtures__/file1.json __fixtures__/file2.json
 
 ## Пример:
-https://asciinema.org/a/1zTVhM6eRMweYFvNIVftiDs74
+*** https://asciinema.org/a/1zTVhM6eRMweYFvNIVftiDs74
+
+Дeмонстрация работы с YAML файлами:
+```bash
+
+gendiff __fixtures__/file1.yml __fixtures__/file2.yml
+*** https://asciinema.org/a/UpAoisGZBUWAHMScmjHsookEH
