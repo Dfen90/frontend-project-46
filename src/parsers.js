@@ -10,7 +10,7 @@ const readFile = (filepath) => {
 const parseJSON = (content) => JSON.parse(content);
 const parseYAML = (content) => yaml.load(content);
 
-export const parseFile = (filepath) => {
+const parseFile = (filepath) => {
   const content = readFile(filepath);
   const extension = path.extname(filepath).toLowerCase();
 
@@ -24,3 +24,5 @@ export const parseFile = (filepath) => {
       throw new Error(`Unsupported file extension: ${extension}`);
   }
 };
+
+export default parseFile;
