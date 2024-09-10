@@ -2,9 +2,9 @@
 # Gendiff
 
 [![Actions Status](https://github.com/Dfen90/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Dfen90/frontend-project-46/actions)
-[![Node.js CI](https://github.com/Dfen90/frontend-project-46/gendiff/actions/workflows/node.js.yml/badge.svg)](https://github.com/Dfen90/frontend-project-46/gendiff/actions/workflows/node.js.yml)
-[![Maintainability](https://codeclimate.com/github/Dfen90/frontend-project-46)](https://codeclimate.com/github/Dfen90/gendiff/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/your_badge_id/test_coverage)](https://codeclimate.com/github/Dfen90/frontend-project-46/gendiff/test_coverage)
+[![Node.js CI](https://github.com/Dfen90/frontend-project-46/actions/workflows/node.js.yml/badge.svg)](https://github.com/Dfen90/frontend-project-46/actions/workflows/node.js.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/YOUR_BADGE_ID/maintainability)](https://codeclimate.com/github/Dfen90/frontend-project-46/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/YOUR_BADGE_ID/test_coverage)](https://codeclimate.com/github/Dfen90/frontend-project-46/test_coverage)
 
 Gendiff is a command-line utility that compares two configuration files and shows the difference.
 
